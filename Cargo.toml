@@ -1,0 +1,10 @@
+[package]
+name = "setmon"
+version = "0.1.1"
+edition = "2021"
+author = "Trevor Sullivan"
+description = "Sets LCD monitor brightness on the Windows platform, using Win32 API."
+license = "MIT"
+
+[dependencies]
+windows = { version = "0.51.1", features = ["Win32_Foundation", "Win32_Graphics_Gdi", "Win32_Devices_Display"] }
